@@ -1,23 +1,9 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<script src="<c:url value="/resources/templates/js/bootstrap.bundle.min.js"/> "></script>
-	<!--plugins-->
-	<script src="<c:url value="/resources/templates/js/jquery.min.js"/> "></script>
-	<script src="<c:url value="/resources/templates/plugins/simplebar/js/simplebar.min.js"/> "></script>
-	<script src="<c:url value="/resources/templates/plugins/metismenu/js/metisMenu.min.js"/> "></script>
-	<script src="<c:url value="/resources/templates/plugins/perfect-scrollbar/js/perfect-scrollbar.js"/> "></script>
-	<script src="<c:url value="/resources/templates/plugins/chartjs/chart.min.js"/> "></script>
-	<script src="<c:url value="/resources/templates/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"/> "></script>
-    <script src="<c:url value="/resources/templates/plugins/vectormap/jquery-jvectormap-world-mill-en.js"/> "></script>
-	<script src="<c:url value="/resources/templates/plugins/jquery.easy-pie-chart/jquery.easypiechart.min.js"/> "></script>
-	<script src="<c:url value="/resources/templates/plugins/sparkline-charts/jquery.sparkline.min.js"/> "></script>
-	<script src="<c:url value="/resources/templates/plugins/jquery-knob/excanvas.js"/> "></script>
-	<script src="<c:url value="/resources/templates/plugins/jquery-knob/jquery.knob.js"/> "></script>
-	  <script>
-		  $(function() {
-			  $(".knob").knob();
-		  });
-	  </script>
-	  <script src="<c:url value="/resources/templates/js/index.js"/> "></script>
-	<script src="<c:url value="/resources/templates/js/app.js"/>"></script>
-	
-	
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="<c:url value="/resources/templates/js/scripts.js" />"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<script src="<c:url value="/resources/templates/assets/demo/chart-area-demo.js" />"></script>
+<script src="<c:url value="/resources/templates/assets/demo/chart-bar-demo.js" />"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+<script src="<c:url value="/resources/templates/js/datatables-simple-demo.js" />"></script>
