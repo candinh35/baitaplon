@@ -11,10 +11,10 @@
 	<div id="layoutSidenav_content">
 		<main>
 			<div class="container-fluid px-4">
-				<h1 class="mt-4">Tables</h1>
+				<h1 class="mt-4">Categories</h1>
 				<ol class="breadcrumb mb-4">
 					<li class="breadcrumb-item"><a href="dashboard">Dashboard</a></li>
-					<li class="breadcrumb-item active">Tables</li>
+					<li class="breadcrumb-item active">Categories</li>
 				</ol>
 				<div class="col-lg-6">
 					<c:if test="${!empty success}">

@@ -64,7 +64,7 @@ public class AdminController {
 
 	@RequestMapping(value = "/insertProduct")
 	public String save(@ModelAttribute("product") Product product, BindingResult result,
-			@RequestParam("test") MultipartFile fileImage, HttpServletRequest request) {
+			@RequestParam("imageInset") MultipartFile fileImage, HttpServletRequest request, Model model) {
 
 		String path = request.getServletContext().getRealPath("resources/images");
 		File f = new File(path);
@@ -81,6 +81,10 @@ public class AdminController {
 		product.setImage(fileName);
 
 		if (ProductDao.insertProduct(product)) {
+			model.addAttribute("success", "Insert successfully!");
+			List<Product> list = ProductDao.getProducts();
+			model.addAttribute("list", list);
+			model.addAttribute("title", "List product");
 			return "Admin/product/index";
 		} else {
 			return "Admin/product/add";
@@ -95,6 +99,18 @@ public class AdminController {
 		model.addAttribute("title", "Product Detail");
 		return "Admin/product/detail";
 	}
+	@RequestMapping("/deleteProduct")
+	public String deleteStudent(@RequestParam("proId") Integer proId, Model model) {
+		boolean bl = ProductDao.delete(proId);
+		if (bl) {
+			model.addAttribute("success", "Delete successfully!");
+		} else {
+			model.addAttribute("error", "Delete failed!");
+		}
+		List<Product> list = ProductDao.getProducts();
+		model.addAttribute("list", list);
+		return "Admin/product/index";
+	}
 
 	@RequestMapping("/editProduct")
 	public String editProduct(@RequestParam("proId") Integer proId, Model model) {
@@ -108,9 +124,9 @@ public class AdminController {
 
 	@RequestMapping(value = "/updateProduct")
 	public String update(@ModelAttribute("product") Product product, BindingResult result,
-			@RequestParam("fileImage") MultipartFile fileImage, HttpServletRequest request) {
+			@RequestParam("fileImage") MultipartFile fileImage, HttpServletRequest request, Model model) {
 		String fileName = fileImage.getOriginalFilename();
-		boolean isEmpty = fileName == null || fileName.trim().length() == 0;
+		boolean isEmpty = fileName == null || fileName.trim().isEmpty();
 		if (!isEmpty) {
 			String path = request.getServletContext().getRealPath("resources/images");
 			File f = new File(path);
@@ -128,7 +144,11 @@ public class AdminController {
 		}
 
 		if (ProductDao.update(product)) {
-			return "redirect:/product";
+			model.addAttribute("success", "Insert successfully!");
+			List<Product> list = ProductDao.getProducts();
+			model.addAttribute("list", list);
+			model.addAttribute("title", "List product");
+			return "Admin/product/index";
 		} else {
 			return "redirect:/updateProduct";
 		}

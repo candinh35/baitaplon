@@ -4,84 +4,94 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
-<jsp:include page="../head.jsp"></jsp:include>
-<body class="bg-theme bg-theme1">
-
-	<div class="wrapper">
-		<jsp:include page="../sidebar.jsp"></jsp:include>
-		<div class="page-wrapper">
-			<div class="page-content">
-
-				<div class="row">
-					<div class="col-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="row align-items-center">
-									<div class="col-lg-3 col-xl-2">
-										<a href="addProduct"
-											class="btn btn-light mb-3 mb-lg-0"><i
-											class='bx bxs-plus-square'></i>New Product</a>
-									</div>
-									<div class="col-lg-9 col-xl-10">
-										<form class="float-lg-end">
-											<div class="row row-cols-lg-auto g-2">
-												<div class="col-12">
-													<div class="position-relative">
-														<input type="text" class="form-control ps-5"
-															placeholder="Search Product..."> <span
-															class="position-absolute top-50 product-show translate-middle-y"><i
-															class="bx bx-search"></i></span>
-													</div>
-												</div>
-
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
+<jsp:include page="../head.jsp" flush="true"></jsp:include>
+<body class="sb-nav-fixed">
+<jsp:include page="../header.jsp" flush="true"></jsp:include>
+<div id="layoutSidenav">
+	<jsp:include page="../sidebar.jsp"></jsp:include>
+	<div id="layoutSidenav_content">
+		<main>
+			<div class="container-fluid px-4">
+				<h1 class="mt-4">Products</h1>
+				<ol class="breadcrumb mb-4">
+					<li class="breadcrumb-item"><a href="dashboard">Dashboard</a></li>
+					<li class="breadcrumb-item active">Products</li>
+				</ol>
+				<div class="col-lg-6">
+					<c:if test="${!empty success}">
+						<div class="alert alert-success" role="alert">
+							<strong>${success}</strong>
 						</div>
-					</div>
+					</c:if>
 				</div>
-				<c:if test="${!empty success}">
-					<div class="alert alert-primary" role="alert">
-						<strong>${success}</strong>
+				<div class="card mb-4">
+					<div class="card-header">
+						<i class="fas fa-table me-1"></i>
+						DataTable Product
 					</div>
-				</c:if>
-				<div
-					class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 product-grid">
-					<c:forEach items="${list}" var="p">
-						<div class="col">
-							<div class="card">
-								<img src="<c:url value='/resources/${p.image}' />" class="card-img-top" alt="...">
-
-								<div class="card-body">
-									<a href="detail?proId=${p.proId}"><h6 class="card-title cursor-pointer">${p.proName }</h6></a>
-									<div class="clearfix">
+					<div class="card-body">
+						<table id="datatablesSimple">
+							<thead>
+							<tr>
+								<th>Id</th>
+								<th>Image</th>
+								<th>Name</th>
+								<th>Price</th>
+								<th>Description</th>
+								<th>Category</th>
+								<th>Action</th>
+							</tr>
+							</thead>
+							<tfoot>
+							<tr>
+								<th>Id</th>
+								<th>Image</th>
+								<th>Name</th>
+								<th>Price</th>
+								<th>Description</th>
+								<th>Category</th>
+								<th>Action</th>
+							</tr>
+							</tfoot>
+							<tbody>
+							<c:forEach items="${list}" var="p" varStatus="loop">
+								<tr>
+									<td scope="row">${loop.count}</td>
+									<td><img style="width: 100px; height: 100px" src="<c:url value='/resources/images/${p.image}' />" class="card-img-top" alt="..."></td>
+									<td><a href="detail?proId=${p.proId}"><h6 class="card-title cursor-pointer">${p.proName }</h6></a></td>
+									<td>
 										<p class="mb-0 float-start">
 											<strong><fmt:formatNumber type = "number" maxFractionDigits = "3" value = "${p.price}" /></strong>
 										</p>
-										
-									</div>
-								</div>
-								<a href="editProduct?proId=${p.proId}" class="btn btn-primary">Edit</a>
-							</div>
-						</div>
-					</c:forEach>
+									</td>
+									<td>${p.description}</td>
+									<td>${p.cateId.cateName}</td>
+									<td>
+										<a href="deleteProduct?proId=${p.proId}" class="btn btn-danger" onclick="return confirm('Sure?')">Delete</a>
+										<a href="editProduct?proId=${p.proId}" class="btn btn-primary">Edit</a>
+									</td>
+								</tr>
+							</c:forEach>
+							</tbody>
+						</table>
+					</div>
 				</div>
-				<!--end row-->
-
-
 			</div>
-		</div>
-		<!--end page wrapper -->
-		<!--start overlay-->
-		<div class="overlay toggle-icon"></div>
-		<!--end overlay-->
-		<!--Start Back To Top Button-->
-		<a href="javaScript:;" class="back-to-top"><i
-			class='bx bxs-up-arrow-alt'></i></a>
-		<!--End Back To Top Button-->
+		</main>
+		<footer class="py-4 bg-light mt-auto">
+			<div class="container-fluid px-4">
+				<div class="d-flex align-items-center justify-content-between small">
+					<div class="text-muted">Copyright &copy; Your Website 2023</div>
+					<div>
+						<a href="#">Privacy Policy</a>
+						&middot;
+						<a href="#">Terms &amp; Conditions</a>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
-	<jsp:include page="../scripts.jsp" />
+</div>
+<jsp:include page="../scripts.jsp" flush="true"></jsp:include>
 </body>
 </html>

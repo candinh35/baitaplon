@@ -10,4 +10,5 @@ public interface ProductDao {
 	public Product getProductById (Integer proId);
 	public boolean insertProduct(Product pro);
 	public Boolean update(Product product);
+	public Boolean delete(Integer proId);
 }
