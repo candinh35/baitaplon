@@ -15,7 +15,11 @@ public class AppController {
 		model.addAttribute("title", "Login");
 		return "login";
 	}
-
+	@RequestMapping({"/admin/logout" })
+	public String logoutAdmin(Model model) {
+		model.addAttribute("mess", "Has Logged out!!!");
+		return "login";
+	}
 	@RequestMapping("/logout")
 	public String logout(Model model) {
 		model.addAttribute("mess", "Has Logged out!!!");
