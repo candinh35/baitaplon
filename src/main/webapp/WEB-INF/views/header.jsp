@@ -37,8 +37,8 @@
 					<div class="header-top-link">
 						<ul class="quick-link">
 							<li><a href="#">Help</a></li>
-							<li><a href="sign-up.html">Join Us</a></li>
-							<li><a href="sign-in.html">Sign In</a></li>
+							<li><a href="login">Join Us</a></li>
+							<li><a href="login">Sign In</a></li>
 						</ul>
 					</div>
 				</div>
@@ -51,10 +51,10 @@
 		<div class="container">
 			<div class="header-navbar">
 				<div class="header-brand">
-					<a href="index-2.html" class="logo logo-dark">
+					<a href="index" class="logo logo-dark">
 						<img src="<c:url value="/resources/assets/images/logo/logo.png"/>" alt="Site Logo">
 					</a>
-					<a href="index-2.html" class="logo logo-light">
+					<a href="index" class="logo logo-light">
 						<img src="<c:url value="/resources/assets/images/logo/logo-light.png"/>" alt="Site Logo">
 					</a>
 				</div>
@@ -63,7 +63,7 @@
 					<nav class="mainmenu-nav">
 						<button class="mobile-close-btn mobile-nav-toggler"><i class="fas fa-times"></i></button>
 						<div class="mobile-nav-brand">
-							<a href="index-2.html" class="logo">
+							<a href="index" class="logo">
 								<img src="<c:url value="/resources/assets/images/logo/logo.png"/>" alt="Site Logo">
 							</a>
 						</div>
@@ -75,9 +75,6 @@
 								<a href="product">Shop</a>
 							</li>
 							<li><a href="about">About</a></li>
-							<li>
-								<a href="blog">Blog</a>
-							</li>
 							<li><a href="contact">Contact</a></li>
 						</ul>
 					</nav>
@@ -91,7 +88,7 @@
 							</a>
 						</li>
 						<li class="wishlist">
-							<a href="wishlist.html">
+							<a href="">
 								<i class="flaticon-heart"></i>
 							</a>
 						</li>

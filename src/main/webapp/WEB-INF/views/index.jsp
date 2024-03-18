@@ -376,7 +376,7 @@
 														Add to Cart
 													</a>
 												</li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -413,7 +413,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -452,7 +452,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -489,7 +489,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -529,7 +529,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -568,7 +568,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -608,7 +608,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -647,7 +647,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -691,7 +691,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -717,7 +717,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -756,7 +756,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -792,7 +792,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -821,7 +821,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -860,7 +860,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -899,7 +899,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -938,7 +938,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Select Option</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -1114,7 +1114,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Add to Cart</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -1151,7 +1151,7 @@
 										<ul class="cart-action">
 											<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 											<li class="select-option"><a href="single-product.html">Select Option</a></li>
-											<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+											<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 										</ul>
 									</div>
 								</div>
@@ -1190,7 +1190,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Add to Cart</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -1230,7 +1230,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Add to Cart</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -1269,7 +1269,7 @@
 											<ul class="cart-action">
 												<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
 												<li class="select-option"><a href="single-product.html">Add to Cart</a></li>
-												<li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+												<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -1317,7 +1317,7 @@
 									</div>
 									<div class="product-cart">
 										<a href="cart.html" class="cart-btn"><i class="fal fa-shopping-cart"></i></a>
-										<a href="wishlist.html" class="cart-btn"><i class="fal fa-heart"></i></a>
+										<a href="" class="cart-btn"><i class="fal fa-heart"></i></a>
 									</div>
 								</div>
 							</div>
@@ -1346,7 +1346,7 @@
 									</div>
 									<div class="product-cart">
 										<a href="cart.html" class="cart-btn"><i class="fal fa-shopping-cart"></i></a>
-										<a href="wishlist.html" class="cart-btn"><i class="fal fa-heart"></i></a>
+										<a href="" class="cart-btn"><i class="fal fa-heart"></i></a>
 									</div>
 								</div>
 							</div>
@@ -1375,7 +1375,7 @@
 									</div>
 									<div class="product-cart">
 										<a href="cart.html" class="cart-btn"><i class="fal fa-shopping-cart"></i></a>
-										<a href="wishlist.html" class="cart-btn"><i class="fal fa-heart"></i></a>
+										<a href="" class="cart-btn"><i class="fal fa-heart"></i></a>
 									</div>
 								</div>
 							</div>
@@ -1404,7 +1404,7 @@
 									</div>
 									<div class="product-cart">
 										<a href="cart.html" class="cart-btn"><i class="fal fa-shopping-cart"></i></a>
-										<a href="wishlist.html" class="cart-btn"><i class="fal fa-heart"></i></a>
+										<a href="" class="cart-btn"><i class="fal fa-heart"></i></a>
 									</div>
 								</div>
 							</div>
@@ -1433,7 +1433,7 @@
 									</div>
 									<div class="product-cart">
 										<a href="cart.html" class="cart-btn"><i class="fal fa-shopping-cart"></i></a>
-										<a href="wishlist.html" class="cart-btn"><i class="fal fa-heart"></i></a>
+										<a href="" class="cart-btn"><i class="fal fa-heart"></i></a>
 									</div>
 								</div>
 							</div>
@@ -1462,7 +1462,7 @@
 									</div>
 									<div class="product-cart">
 										<a href="cart.html" class="cart-btn"><i class="fal fa-shopping-cart"></i></a>
-										<a href="wishlist.html" class="cart-btn"><i class="fal fa-heart"></i></a>
+										<a href="" class="cart-btn"><i class="fal fa-heart"></i></a>
 									</div>
 								</div>
 							</div>
@@ -1491,7 +1491,7 @@
 									</div>
 									<div class="product-cart">
 										<a href="cart.html" class="cart-btn"><i class="fal fa-shopping-cart"></i></a>
-										<a href="wishlist.html" class="cart-btn"><i class="fal fa-heart"></i></a>
+										<a href="" class="cart-btn"><i class="fal fa-heart"></i></a>
 									</div>
 								</div>
 							</div>
@@ -1520,7 +1520,7 @@
 									</div>
 									<div class="product-cart">
 										<a href="cart.html" class="cart-btn"><i class="fal fa-shopping-cart"></i></a>
-										<a href="wishlist.html" class="cart-btn"><i class="fal fa-heart"></i></a>
+										<a href="" class="cart-btn"><i class="fal fa-heart"></i></a>
 									</div>
 								</div>
 							</div>
@@ -1646,57 +1646,6 @@
 
 	</main>
 
-
-	<div class="service-area">
-		<div class="container">
-			<div class="row row-cols-xl-4 row-cols-sm-2 row-cols-1 row--20">
-				<div class="col">
-					<div class="service-box service-style-2">
-						<div class="icon">
-							<img src="<c:url value="/resources/assets/images/icons/service1.png"/>" alt="Service">
-						</div>
-						<div class="content">
-							<h6 class="title">Fast &amp; Secure Delivery</h6>
-							<p>Tell about your service.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="service-box service-style-2">
-						<div class="icon">
-							<img src="<c:url value="/resources/assets/images/icons/service2.png"/>" alt="Service">
-						</div>
-						<div class="content">
-							<h6 class="title">Money Back Guarantee</h6>
-							<p>Within 10 days.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="service-box service-style-2">
-						<div class="icon">
-							<img src="<c:url value="/resources/assets/images/icons/service3.png"/>" alt="Service">
-						</div>
-						<div class="content">
-							<h6 class="title">24 Hour Return Policy</h6>
-							<p>No question ask.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="service-box service-style-2">
-						<div class="icon">
-							<img src="<c:url value="/resources/assets/images/icons/service4.png"/>" alt="Service">
-						</div>
-						<div class="content">
-							<h6 class="title">Pro Quality Support</h6>
-							<p>24/7 Live support.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<jsp:include page="footer.jsp" flush="true"></jsp:include>
 
 	<jsp:include page="scripts.jsp" flush="true"></jsp:include>

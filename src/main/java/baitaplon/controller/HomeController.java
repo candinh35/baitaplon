@@ -2,6 +2,8 @@ package baitaplon.controller;
 
 import java.util.List;
 
+import baitaplon.DAO.ProductDao;
+import baitaplon.entities.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,9 +15,13 @@ import baitaplon.entities.Category;
 public class HomeController {
     @Autowired
     private CategoryDao CategoryDao;
+
+    @Autowired
+    private ProductDao productDao;
     
     @RequestMapping(value= {"/", "/index"})
     public String index(Model model) {
+        List<Product> products = productDao.getProducts();
         model.addAttribute("title", "Home");
         return "index";
     }

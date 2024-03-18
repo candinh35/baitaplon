@@ -1,6 +1,56 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<div class="service-area">
+	<div class="container">
+		<div class="row row-cols-xl-4 row-cols-sm-2 row-cols-1 row--20">
+			<div class="col">
+				<div class="service-box service-style-2">
+					<div class="icon">
+						<img src="<c:url value="/resources/assets/images/icons/service1.png"/>" alt="Service">
+					</div>
+					<div class="content">
+						<h6 class="title">Fast &amp; Secure Delivery</h6>
+						<p>Tell about your service.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="service-box service-style-2">
+					<div class="icon">
+						<img src="<c:url value="/resources/assets/images/icons/service2.png"/>" alt="Service">
+					</div>
+					<div class="content">
+						<h6 class="title">Money Back Guarantee</h6>
+						<p>Within 10 days.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="service-box service-style-2">
+					<div class="icon">
+						<img src="<c:url value="/resources/assets/images/icons/service3.png"/>" alt="Service">
+					</div>
+					<div class="content">
+						<h6 class="title">24 Hour Return Policy</h6>
+						<p>No question ask.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="service-box service-style-2">
+					<div class="icon">
+						<img src="<c:url value="/resources/assets/images/icons/service4.png"/>" alt="Service">
+					</div>
+					<div class="content">
+						<h6 class="title">Pro Quality Support</h6>
+						<p>24/7 Live support.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <!-- Start Footer Area  -->
 <footer class="axil-footer-area footer-style-2">
 	<!-- Start Footer Top Area  -->
@@ -38,7 +88,7 @@
 								<li><a href="my-account.html">My Account</a></li>
 								<li><a href="sign-up.html">Login / Register</a></li>
 								<li><a href="cart.html">Cart</a></li>
-								<li><a href="wishlist.html">Wishlist</a></li>
+								<li><a href="">Wishlist</a></li>
 								<li><a href="shop.html">Shop</a></li>
 							</ul>
 						</div>
@@ -251,7 +301,7 @@
 										<!-- Start Product Action  -->
 										<ul class="product-action d-flex-center mb--0">
 											<li class="add-to-cart"><a href="cart.html" class="axil-btn btn-bg-primary">Add to Cart</a></li>
-											<li class="wishlist"><a href="wishlist.html" class="axil-btn wishlist-btn"><i class="far fa-heart"></i></a></li>
+											<li class="wishlist"><a href="" class="axil-btn wishlist-btn"><i class="far fa-heart"></i></a></li>
 										</ul>
 										<!-- End Product Action  -->
 
@@ -310,7 +360,7 @@
 						</div>
 						<div class="product-cart">
 							<a href="cart.html" class="cart-btn"><i class="fal fa-shopping-cart"></i></a>
-							<a href="wishlist.html" class="cart-btn"><i class="fal fa-heart"></i></a>
+							<a href="" class="cart-btn"><i class="fal fa-heart"></i></a>
 						</div>
 					</div>
 				</div>
@@ -338,7 +388,7 @@
 						</div>
 						<div class="product-cart">
 							<a href="cart.html" class="cart-btn"><i class="fal fa-shopping-cart"></i></a>
-							<a href="wishlist.html" class="cart-btn"><i class="fal fa-heart"></i></a>
+							<a href="" class="cart-btn"><i class="fal fa-heart"></i></a>
 						</div>
 					</div>
 				</div>

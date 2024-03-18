@@ -5,166 +5,114 @@
 <html>
 <jsp:include page="head.jsp" flush="true"></jsp:include>
 <body>
-	<div class="wrapper">
+	<jsp:include page="header.jsp" flush="true"></jsp:include>
 
-		<!--== Start Preloader Content ==-->
-		<div class="preloader-wrap">
-			<div class="preloader">
-				<span class="dot"></span>
-				<div class="dots">
-					<span></span> <span></span> <span></span>
-				</div>
-			</div>
-		</div>
-
-		<jsp:include page="header.jsp" flush="true"></jsp:include>
-
-		<main class="main-content">
-			<!--== Start Page Title Area ==-->
-			<section class="page-title-area bg-img"
-				data-bg-img="<c:url value="/resources/assets/img/photos/bg-page3.jpg"/>">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="page-title-content">
-								<h2 class="title">Contact Us</h2>
-								<div class="bread-crumbs">
-									<a href="index">Home<span class="breadcrumb-sep">></span></a><span
-										class="active">Contact Us</span>
-								</div>
+	<main class="main-wrapper">
+		<!-- Start Breadcrumb Area  -->
+		<div class="axil-breadcrumb-area">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-md-8">
+						<div class="inner">
+							<ul class="axil-breadcrumb">
+								<li class="axil-breadcrumb-item"><a href="index">Home</a></li>
+								<li class="separator"></li>
+								<li class="axil-breadcrumb-item active" aria-current="page">Contact</li>
+							</ul>
+							<h1 class="title">Contact With Us</h1>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-4">
+						<div class="inner">
+							<div class="bradcrumb-thumb">
+								<img src="<c:url value="/resources/assets/images/product/product-45.png"/>" alt="Image">
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<!--== End Page Title Area ==-->
+			</div>
+		</div>
+		<!-- End Breadcrumb Area  -->
 
-			<!--== Start Contact Area ==-->
-			<section class="contact-area">
-				<div class="container">
-					<div class="row">
-						<div class=" col-lg-7">
+		<!-- Start Contact Area  -->
+		<div class="axil-contact-page-area axil-section-gap">
+			<div class="container">
+				<div class="axil-contact-page">
+					<div class="row row--30">
+						<div class="col-lg-8">
 							<div class="contact-form">
-								<form class="contact-form-wrapper form-style" id="contact-form"
-									action="http://whizthemes.com/mail-php/raju/arden/mail.php"
-									method="post">
-									<div class="row">
-										<div class="col-lg-12">
-											<div class="section-title">
-												<h2 class="title">Contact us for any questions</h2>
-											</div>
-										</div>
-										<div class="col-md-12">
+								<h3 class="title mb--10">We would love to hear from you.</h3>
+								<p>If you’ve got great products your making or looking to work with us then drop us a line.</p>
+								<form id="contact-form" method="POST" action="https://new.axilthemes.com/demo/template/etrade/mail.php" class="axil-contact-form">
+									<div class="row row--10">
+										<div class="col-lg-4">
 											<div class="form-group">
-												<input class="form-control" type="text" name="con_name"
-													placeholder="Name*">
+												<label for="contact-name">Name <span>*</span></label>
+												<input type="text" name="contact-name" id="contact-name">
 											</div>
 										</div>
-										<div class="col-md-12">
+										<div class="col-lg-4">
 											<div class="form-group">
-												<input class="form-control" type="email" name="con_email"
-													placeholder="Email*">
+												<label for="contact-phone">Phone <span>*</span></label>
+												<input type="text" name="contact-phone" id="contact-phone">
 											</div>
 										</div>
-										<div class="col-md-12">
+										<div class="col-lg-4">
 											<div class="form-group">
-												<input class="form-control" type="text" name="con_phone"
-													placeholder="Phone Number">
+												<label for="contact-email">E-mail <span>*</span></label>
+												<input type="email" name="contact-email" id="contact-email">
 											</div>
 										</div>
-										<div class="col-md-12">
-											<div class="form-group mb-0">
-												<textarea class="form-control textarea" name="con_message"
-													placeholder="How can we help?"></textarea>
+										<div class="col-12">
+											<div class="form-group">
+												<label for="contact-message">Your Message</label>
+												<textarea name="contact-message" id="contact-message" cols="1" rows="2"></textarea>
 											</div>
 										</div>
-										<div class="col-md-12">
-											<div class="form-group mb-0">
-												<button class="btn btn-theme btn-black" type="submit">Send
-													Message</button>
+										<div class="col-12">
+											<div class="form-group mb--0">
+												<button name="submit" type="submit" id="submit" class="axil-btn btn-bg-primary">Send Message</button>
 											</div>
 										</div>
 									</div>
 								</form>
-								<!-- Message Notification -->
-								<div class="form-message"></div>
 							</div>
 						</div>
-						<div class=" col-lg-5">
-							<div class="contact-info-wrapper">
-								<div class="section-title">
-									<h2 class="title">Get info</h2>
-								</div>
-								<div class="contact-info-content">
-									<div class="align-top">
-										<div class="contact-info-item">
-											<div class="icon">
-												<i class="lastudioicon lastudioicon-pin-3-2"></i>
-											</div>
-											<div class="content">
-												<h4>Moren Store 1</h4>
-												<p>PO Box 16122 Collins Street West Victoria 8007
-													Australia</p>
-											</div>
-										</div>
-										<div class="contact-info-item">
-											<div class="icon">
-												<span><i class="lastudioicon lastudioicon-pin-3-2"></i></span>
-											</div>
-											<div class="content">
-												<h4>Moren Store 2</h4>
-												<p>8134 Budd Rd Terre Haute, In 3548</p>
-											</div>
-										</div>
-									</div>
-									<div class="align-bottom">
-										<div class="contact-info-item info-item2">
-											<div class="icon">
-												<span><i class="lastudioicon lastudioicon-mail"></i></span>
-											</div>
-											<div class="content">
-												<p>info@moren.com</p>
-											</div>
-										</div>
-										<div class="contact-info-item">
-											<div class="icon">
-												<span><i
-													class="lastudioicon lastudioicon-phone-call-2"></i></span>
-											</div>
-											<div class="content">
-												<p>+354-354-4861</p>
-											</div>
-										</div>
-										<div class="contact-info-item social-icons-item mb-0 pb-0">
-											<div class="content">
-												<div class="social-widget">
-													<a href="#/"><i
-														class="lastudioicon lastudioicon-b-facebook"></i></a> <a
-														href="#/"><i
-														class="lastudioicon lastudioicon-b-pinterest"></i></a> <a
-														href="#/"><i
-														class="lastudioicon lastudioicon-b-twitter"></i></a> <a
-														href="#/"><i
-														class="lastudioicon lastudioicon-b-instagram"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+						<div class="col-lg-4">
+							<div class="contact-location mb--40">
+								<h4 class="title mb--20">Our Store</h4>
+								<span class="address mb--20">8212 E. Glen Creek Street Orchard Park, NY 14127, United States of America</span>
+								<span class="phone">Phone: +123 456 7890</span>
+								<span class="email">Email: Hello@etrade.com</span>
+							</div>
+							<div class="contact-career mb--40">
+								<h4 class="title mb--20">Careers</h4>
+								<p>Instead of buying six things, one that you really like.</p>
+							</div>
+							<div class="opening-hour">
+								<h4 class="title mb--20">Opening Hours:</h4>
+								<p>Monday to Saturday: 9am - 10pm
+									<br> Sundays: 10am - 6pm
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<!--== End Contact Area ==-->
+				<!-- Start Google Map Area  -->
+				<div class="axil-google-map-wrap axil-section-gap pb--0">
+					<div class="mapouter">
+						<div class="gmap_canvas">
+							<iframe width="1080" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=melbourne&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Google Map Area  -->
+			</div>
+		</div>
+		<!-- End Contact Area  -->
+	</main>
 
-			<!--== Start Map Area ==-->
-
-			<!--== End Map Area ==-->
-		</main>
-		<jsp:include page="footer.jsp" flush="true"></jsp:include>
-
-	</div>
+	<jsp:include page="footer.jsp" flush="true"></jsp:include>
 	<jsp:include page="scripts.jsp" flush="true"></jsp:include>
 </body>
 </html>
