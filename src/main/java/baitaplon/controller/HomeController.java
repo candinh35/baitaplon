@@ -14,7 +14,7 @@ import baitaplon.entities.Category;
 @Controller
 public class HomeController {
     @Autowired
-    private CategoryDao CategoryDao;
+    private CategoryDao categoryDao;
 
     @Autowired
     private ProductDao productDao;
@@ -22,7 +22,10 @@ public class HomeController {
     @RequestMapping(value= {"/", "/index"})
     public String index(Model model) {
         List<Product> products = productDao.getProducts();
+        List<Category> categories = categoryDao.getCate();
         model.addAttribute("title", "Home");
+        model.addAttribute("products", products);
+        model.addAttribute("categories", categories);
         return "index";
     }
 
@@ -48,7 +51,7 @@ public class HomeController {
     @RequestMapping(value={"/blog"})
     public String blog( Model model){
     	model.addAttribute("title", "Blog");
-    	List<Category> category = CategoryDao.getCate();
+    	List<Category> category = categoryDao.getCate();
     	model.addAttribute("category", category);
     	return "blog";
     }
