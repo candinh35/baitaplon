@@ -1,7 +1,11 @@
 package baitaplon.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import baitaplon.controller.request.AddCart;
+import baitaplon.controller.request.Cart;
+import baitaplon.controller.request.ListProductCart;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,6 +17,8 @@ import baitaplon.DAO.CategoryDao;
 import baitaplon.DAO.ProductDao;
 import baitaplon.entities.Category;
 import baitaplon.entities.Product;
+
+import javax.servlet.http.HttpSession;
 
 @Controller
 public class ProductController {
@@ -44,8 +50,43 @@ public class ProductController {
 	  @RequestMapping(value="/product-detail")
 	    public String productDetail(@RequestParam("proId") Integer proId, Model model) {
 	    	Product product = ProductDao.getProductById(proId);
+	    	List<Product> products = ProductDao.getProducts();
+            AddCart addCart = new AddCart();
 	    	model.addAttribute("product", product);
+	    	model.addAttribute("products", products);
+	    	model.addAttribute("addCart", addCart);
 	    	model.addAttribute("title", "Chi tiết sản phẩm");
 	        return "productDetail";
 	    }
+
+    @RequestMapping(value = "/addCart", method = RequestMethod.POST)
+    public String addCart(AddCart addCart, Model model, HttpSession session) {
+        // Lấy giỏ hàng từ phiên, nếu không có, tạo mới
+        Cart cart = (Cart) session.getAttribute("cart");
+        if (cart == null) {
+            cart = new Cart();
+            session.setAttribute("cart", cart);
+        }
+
+        // Thêm mục mới vào giỏ hàng
+        cart.addItem(addCart);
+
+        // Cập nhật giỏ hàng trong phiên
+        session.setAttribute("cart", cart);
+
+        List<ListProductCart> listProductCarts = new ArrayList<>();
+        for (AddCart item : cart.getItems()) {
+            ListProductCart listProductCart = new ListProductCart();
+            Product product = ProductDao.getProductById(item.getProId());
+            listProductCart.setProId(product.getProId());
+            listProductCart.setProName(product.getProName());
+            listProductCart.setPrice(product.getPrice());
+            listProductCart.setImage(product.getImage());
+            listProductCart.setTotalPro(item.getTotalPro());
+            listProductCart.setSubTotalPro(item.getTotalPro() * product.getPrice());
+            listProductCarts.add(listProductCart);
+        }
+        model.addAttribute("listProductCarts", listProductCarts);
+        return "Cart";
+    }
 }
