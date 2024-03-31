@@ -42,7 +42,7 @@ public class ProductController {
             products = ProductDao.getProducts();
         }
 
-        model.addAttribute("productList", products);
+        model.addAttribute("products", products);
         model.addAttribute("title", "Product");
 
         return "product";

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <jsp:include page="head.jsp" flush="true"></jsp:include>
@@ -390,10 +391,9 @@
 									</span>
 												<span class="rating-number">(64)</span>
 											</div>
-											<h5 class="title"><a href="product-detail?proId=${p.proId}">Yantiti Leather & Canvas Bags</a></h5>
+											<h5 class="title"><a href="product-detail?proId=${p.proId}">${p.proName}</a></h5>
 											<div class="product-price-variant">
-												<span class="price current-price">$29.99</span>
-												<span class="price old-price">$49.99</span>
+												<span class="price current-price"><fmt:formatNumber value="${p.price}" type="currency" currencyCode="USD" /></span>
 											</div>
 										</div>
 									</div>
@@ -438,10 +438,9 @@
 									</span>
 													<span class="rating-number">(64)</span>
 												</div>
-												<h5 class="title"><a href="product-detail?proId=${p.proId}">Yantiti Leather & Canvas Bags</a></h5>
+												<h5 class="title"><a href="product-detail?proId=${p.proId}">${p.proName}</a></h5>
 												<div class="product-price-variant">
-													<span class="price current-price">$29.99</span>
-													<span class="price old-price">$49.99</span>
+													<span class="price current-price"><fmt:formatNumber value="${p.price}" type="currency" currencyCode="USD" /></span>
 												</div>
 											</div>
 										</div>

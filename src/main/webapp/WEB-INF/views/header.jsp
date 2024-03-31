@@ -93,8 +93,7 @@
 							</a>
 						</li>
 						<li class="shopping-cart">
-							<a href="#" class="cart-dropdown-btn">
-								<span class="cart-count">3</span>
+							<a href="cart">
 								<i class="flaticon-shopping-cart"></i>
 							</a>
 						</li>
@@ -106,13 +105,13 @@
 								<span class="title">QUICKLINKS</span>
 								<ul>
 									<li>
-										<a href="my-account.html">My Account</a>
+										<a href="">My Account</a>
 									</li>
 								</ul>
 								<div class="login-btn">
 									<a href="login" class="axil-btn btn-bg-primary">Login</a>
 								</div>
-								<div class="reg-footer text-center">No account yet? <a href="sign-up.html" class="btn-link">REGISTER HERE.</a></div>
+								<div class="reg-footer text-center">No account yet? <a href="" class="btn-link">REGISTER HERE.</a></div>
 							</div>
 						</li>
 						<li class="axil-mobile-toggle">

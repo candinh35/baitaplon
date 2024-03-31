@@ -3,6 +3,7 @@ package baitaplon.controller;
 import java.util.List;
 
 import baitaplon.DAO.ProductDao;
+import baitaplon.controller.request.AddCart;
 import baitaplon.entities.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,9 +24,11 @@ public class HomeController {
     public String index(Model model) {
         List<Product> products = productDao.getProducts();
         List<Category> categories = categoryDao.getCate();
+        AddCart addCart = new AddCart();
         model.addAttribute("title", "Home");
         model.addAttribute("products", products);
         model.addAttribute("categories", categories);
+        model.addAttribute("addCart", addCart);
         return "index";
     }
 

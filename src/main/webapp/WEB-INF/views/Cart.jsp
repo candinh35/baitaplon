@@ -31,20 +31,31 @@
             </tr>
             </thead>
             <tbody>
-            <c:forEach items="${listProductCarts}" var="cart" varStatus="loop">
-              <tr>
-              <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fal fa-times"></i></a></td>
-              <td class="product-thumbnail"><img src="<c:url value="/resources/images/${cart.image}"/> " alt="Digital Product"></td>
-              <td class="product-title">${cart.proName}</td>
-              <td class="product-price" data-title="Price"><fmt:formatNumber value="${cart.price}" type="currency" currencyCode="USD" /></td>
-              <td class="product-quantity" data-title="Qty">
-                <div class="pro-qty">
-                  <input type="number" class="quantity-input" value="${cart.totalPro}">
-                </div>
-              </td>
-              <td class="product-subtotal" data-title="Subtotal"><fmt:formatNumber value="${cart.subTotalPro}" type="currency" currencyCode="USD" /></td>
-            </tr>
-            </c:forEach>
+            <c:choose>
+              <c:when test="${empty listProductCarts}">
+                <tr>
+                  <td colspan="6">
+                    <div class="no-data-message text-center">There are no products in the cart.</div>
+                  </td>
+                </tr>
+              </c:when>
+              <c:otherwise>
+                <c:forEach items="${listProductCarts}" var="cart" varStatus="loop">
+                  <tr>
+                    <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fal fa-times"></i></a></td>
+                    <td class="product-thumbnail"><img src="<c:url value="/resources/images/${cart.image}"/> " alt="Digital Product"></td>
+                    <td class="product-title">${cart.proName}</td>
+                    <td class="product-price" data-title="Price"><fmt:formatNumber value="${cart.price}" type="currency" currencyCode="USD" /></td>
+                    <td class="product-quantity" data-title="Qty">
+                      <div class="pro-qty">
+                        <input type="number" class="quantity-input" value="${cart.totalPro}">
+                      </div>
+                    </td>
+                    <td class="product-subtotal" data-title="Subtotal"><fmt:formatNumber value="${cart.subTotalPro}" type="currency" currencyCode="USD" /></td>
+                  </tr>
+                </c:forEach>
+              </c:otherwise>
+            </c:choose>
             </tbody>
           </table>
         </div>
