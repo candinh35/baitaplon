@@ -88,9 +88,6 @@
 							</a>
 						</li>
 						<li class="wishlist">
-							<a href="">
-								<i class="flaticon-heart"></i>
-							</a>
 						</li>
 						<li class="shopping-cart">
 							<a href="cart">

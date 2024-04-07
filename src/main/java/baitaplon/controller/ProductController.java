@@ -1,11 +1,9 @@
 package baitaplon.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import baitaplon.controller.request.AddCart;
 import baitaplon.controller.request.Cart;
-import baitaplon.controller.request.ListProductCart;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -41,7 +39,8 @@ public class ProductController {
         } else {
             products = ProductDao.getProducts();
         }
-
+        AddCart addCart = new AddCart();
+        model.addAttribute("addCart", addCart);
         model.addAttribute("products", products);
         model.addAttribute("title", "Product");
 
@@ -82,19 +81,6 @@ public class ProductController {
 
         session.setAttribute("cart", cart);
 
-        List<ListProductCart> listProductCarts = new ArrayList<>();
-        for (AddCart item : cart.getItems()) {
-            ListProductCart listProductCart = new ListProductCart();
-            Product product = ProductDao.getProductById(item.getProId());
-            listProductCart.setProId(product.getProId());
-            listProductCart.setProName(product.getProName());
-            listProductCart.setPrice(product.getPrice());
-            listProductCart.setImage(product.getImage());
-            listProductCart.setTotalPro(item.getTotalPro());
-            listProductCart.setSubTotalPro(item.getTotalPro() * product.getPrice());
-            listProductCarts.add(listProductCart);
-        }
-        model.addAttribute("listProductCarts", listProductCarts);
-        return "Cart";
+        return "redirect:/cart";
     }
 }

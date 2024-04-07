@@ -2,11 +2,30 @@
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
 <html>
 <jsp:include page="head.jsp" flush="true"></jsp:include>
 <body>
+<style>
+	.axil-product .cart-action li.select-option button {
+		position: relative;
+		height: 40px;
+		line-height: 39px;
+		padding: 0 18px;
+		display: block;
+		border-radius: 4px;
+		font-weight: 700;
+		font-size: 14px;
+		color: var(--color-white);
+		background-color: var(--color-secondary);
+		transition: .3s;
+		box-shadow: 0 16px 32px 0 rgba(0,0,0,.06);
+		position: relative;
+		z-index: 1;
+	}
+</style>
 <jsp:include page="header.jsp" flush="true"></jsp:include>
 
 
@@ -74,9 +93,18 @@
 							</div>
 							<div class="product-hover-action">
 								<ul class="cart-action">
-									<li class="wishlist"><a href=""><i class="far fa-heart"></i></a></li>
-									<li class="select-option"><a href="product-detail?proId=${p.proId}">Add to Cart</a></li>
-									<li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
+									<li class="wishlist"></li>
+									<li class="select-option">
+										<form:form action="addCart" modelAttribute="addCart"
+												   method="POST">
+											<form:input type="hidden" path="proId" value="${p.proId}" id="totalPro"/>
+											<form:input type="hidden" path="totalPro" value="1" id="totalPro"/>
+											<button type="submit">
+												Add to Cart
+											</button>
+										</form:form>
+									</li>
+									<li class="quickview"></li>
 								</ul>
 							</div>
 						</div>

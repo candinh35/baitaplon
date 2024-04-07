@@ -16,7 +16,7 @@
       <div class="axil-product-cart-wrap">
         <div class="product-table-heading">
           <h4 class="title">Your Cart</h4>
-          <a href="#" class="cart-clear">Clear Shoping Cart</a>
+          <a href="#" class="cart-clear"></a>
         </div>
         <div class="table-responsive">
           <table class="table axil-product-table axil-cart-table mb--40">
@@ -42,7 +42,7 @@
               <c:otherwise>
                 <c:forEach items="${listProductCarts}" var="cart" varStatus="loop">
                   <tr>
-                    <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fal fa-times"></i></a></td>
+                    <td class="product-remove"><a href="removeCart?proId=${cart.proId}" class="remove-wishlist"><i class="fal fa-times"></i></a></td>
                     <td class="product-thumbnail"><img src="<c:url value="/resources/images/${cart.image}"/> " alt="Digital Product"></td>
                     <td class="product-title">${cart.proName}</td>
                     <td class="product-price" data-title="Price"><fmt:formatNumber value="${cart.price}" type="currency" currencyCode="USD" /></td>
@@ -75,7 +75,7 @@
                   <tbody>
                   <tr class="order-subtotal">
                     <td>Subtotal</td>
-                    <td>$117.00</td>
+                    <td><fmt:formatNumber value="${totalProCart}" type="currency" currencyCode="USD" /></td>
                   </tr>
                   <tr class="order-shipping">
                     <td>Shipping</td>
@@ -84,23 +84,15 @@
                         <input type="radio" id="radio1" name="shipping" checked>
                         <label for="radio1">Free Shippping</label>
                       </div>
-                      <div class="input-group">
-                        <input type="radio" id="radio2" name="shipping">
-                        <label for="radio2">Local: $35.00</label>
-                      </div>
-                      <div class="input-group">
-                        <input type="radio" id="radio3" name="shipping">
-                        <label for="radio3">Flat rate: $12.00</label>
-                      </div>
                     </td>
                   </tr>
                   <tr class="order-tax">
                     <td>State Tax</td>
-                    <td>$8.00</td>
+                    <td>0 US$</td>
                   </tr>
                   <tr class="order-total">
                     <td>Total</td>
-                    <td class="order-total-amount">$125.00</td>
+                    <td class="order-total-amount"><fmt:formatNumber value="${totalProCart}" type="currency" currencyCode="USD" /></td>
                   </tr>
                   </tbody>
                 </table>
