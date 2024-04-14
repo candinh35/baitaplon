@@ -14,6 +14,13 @@
   <div class="axil-product-cart-area axil-section-gap">
     <div class="container">
       <div class="axil-product-cart-wrap">
+        <div class="col-lg-6">
+          <c:if test="${!empty success}">
+            <div class="alert alert-success" role="alert">
+              <strong>${success}</strong>
+            </div>
+          </c:if>
+        </div>
         <div class="product-table-heading">
           <h4 class="title">Your Cart</h4>
           <a href="#" class="cart-clear"></a>
@@ -97,7 +104,7 @@
                   </tbody>
                 </table>
               </div>
-              <a href="checkout.html" class="axil-btn btn-bg-primary checkout-btn">Process to Checkout</a>
+              <a href="checkout" class="axil-btn btn-bg-primary checkout-btn">Process to Checkout</a>
             </div>
           </div>
         </div>
