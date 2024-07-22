@@ -24,7 +24,7 @@
                         </div>
                     </c:if>
                 </div>
-                <div class="card" style="width: 50vh;">
+                <div class="card" style="width: 100vh;">
                     <div class="card-body">
                         <h5 class="card-title fw-semibold mb-4">Forms</h5>
                         <div class="card">
@@ -53,9 +53,9 @@
                                         </form:select>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="inputProductDescription" class="form-label">Description</label>
-                                        <form:textarea class="form-control" path="description"
-                                                       id="inputProductDescription"
+                                        <label for="editor" class="form-label">Description</label>
+                                        <form:textarea  class="form-control" path="description"
+                                                       id="editor"
                                                        rows="5"/>
                                     </div>
                                     <button type="submit" class="btn btn-light">Save Product</button>
@@ -80,6 +80,15 @@
         </footer>
     </div>
 </div>
+<script>
+    ClassicEditor
+        .create(document.querySelector('#editor'))
+        .catch(error => {
+            console.error(error);
+        });
+</script>
+<script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+
 <jsp:include page="../scripts.jsp" flush="true"></jsp:include>
 </body>
 </html>

@@ -5,6 +5,31 @@
 <html>
 <jsp:include page="../head.jsp" flush="true"></jsp:include>
 <body class="sb-nav-fixed">
+<style>
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	td, th {
+		border: 1px solid #ddd;
+		padding: 8px;
+	}
+
+	th {
+		background-color: #f2f2f2;
+	}
+
+	tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+
+	tr:hover {
+		background-color: #ddd;
+	}
+
+
+</style>
 <jsp:include page="../header.jsp" flush="true"></jsp:include>
 <div id="layoutSidenav">
 	<jsp:include page="../sidebar.jsp"></jsp:include>
@@ -38,14 +63,6 @@
 								<th>Action</th>
 							</tr>
 							</thead>
-							<tfoot>
-							<tr>
-								<th>Id</th>
-								<th>Name</th>
-								<th>Status</th>
-								<th>Action</th>
-							</tr>
-							</tfoot>
 							<tbody>
 							<c:forEach items="${list}" var="c" varStatus="loop">
 								<tr>

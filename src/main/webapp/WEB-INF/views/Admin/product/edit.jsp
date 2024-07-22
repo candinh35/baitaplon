@@ -24,7 +24,7 @@
 						</div>
 					</c:if>
 				</div>
-				<div class="card" style="width: 50vh;">
+				<div class="card" style="width: 100vh;">
 					<div class="card-body">
 						<h5 class="card-title fw-semibold mb-4">Forms</h5>
 						<div class="card">

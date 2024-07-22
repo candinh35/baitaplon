@@ -58,7 +58,7 @@
 								<tr>
 									<td scope="row">${loop.count}</td>
 									<td><img style="width: 100px; height: 100px" src="<c:url value='/resources/images/${p.image}' />" class="card-img-top" alt="..."></td>
-									<td><a href="detail?proId=${p.proId}"><h6 class="card-title cursor-pointer">${p.proName }</h6></a></td>
+									<td><a href="editProduct?proId=${p.proId}"><h6 class="card-title cursor-pointer">${p.proName }</h6></a></td>
 									<td>
 										<p class="mb-0 float-start">
 											<strong><fmt:formatNumber type = "number" maxFractionDigits = "3" value = "${p.price}" /></strong>
